@@ -15,7 +15,7 @@
     (response {:id @counter :content message})))
 
 (defroutes api
-           (GET "/greeting" {{:keys [name] :or {name "World"}} :params} (greeting-handler name)))
+  (GET "/greeting" {{:keys [name] :or {name "World"}} :params} (greeting-handler name)))
 
 (def app (-> api
              wrap-json-response
