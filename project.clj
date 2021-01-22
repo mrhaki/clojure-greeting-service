@@ -5,9 +5,11 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"
             }
   :dependencies [[org.clojure/clojure "1.10.1"]
+                 [org.clojure/data.json "1.0.0"]
                  [http-kit "2.3.0"]
                  [ring/ring-core "1.8.2"]
                  [ring/ring-json "0.5.0"]
+                 [ring/ring-mock "0.4.0"]
                  [compojure "1.6.2"]]
   
   :main ^:skip-aot greeting-service.core
